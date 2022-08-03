@@ -1,0 +1,90 @@
+/**
+*==========================================================================================*
+* Stylesheet to forms
+*==========================================================================================*
+*/
+
+.success-feedback {
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: 80%;
+    color: #dc3545;
+}
+
+.warnig-feedback {
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: 80%;
+    color: #dc3545;
+}
+
+.danger-feedback {
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: 80%;
+    color: #dc3545;
+}
+
+/* div.dataTables_wrapper {
+    width: 80%;
+    margin: 0 auto;
+} */
+
+.ui-autocomplete {
+    max-height: 100px !important;
+    overflow-y: auto !important;
+    /* prevent horizontal scrollbar */
+    overflow-x: hidden !important;
+    z-index: 9999 !important;
+}
+/* IE 6 doesn't support max-height
+   * we use height instead, but this forces the menu to always be this tall
+   */
+* html .ui-autocomplete {
+    height: 100px !important;
+}
+
+.border-none {
+    border: none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none !important;
+}
+
+.tb-size {
+    font-size: 1rem;
+}
+
+.btn_vizualizar {
+    margin-right: 4px;
+}
+
+#btn_vizualizar {
+    margin-right: 4px;
+}
+
+.input-login {
+    height: 60px !important;
+}
+
+.input-recaptcha {
+    margin-top: 20px;
+    margin-bottom: 2px;
+}
+
+thead {
+    display: table-header-group;
+}
+tfoot {
+    display: table-row-group;
+}
+tr {
+    page-break-inside: avoid;
+}
+.page-break{
+    page-break-after: always;
+ }
