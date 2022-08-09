@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 use App\Entities\TbCadUser;
 use App\Entities\TbBase;
 use App\Entities\TbProfile;
@@ -8,6 +9,7 @@ use App\Entities\TbCaixa;
 use App\Entities\TbPaymentType;
 use App\Entities\TbOperation;
 use App\Entities\TbTypeLaunc;
+
 
 class DatabaseSeeder extends Seeder
 {
@@ -166,6 +168,38 @@ class DatabaseSeeder extends Seeder
                 'status'        => 1,
             
               ]);
+
+              DB::table('roles')->insert([
+                'id' => 1,
+                'name' => 'Admin',
+                'guard_name' => 'web',
+              ],
+              [
+                'id' => 2,
+                'name' => 'View',
+                'guard_name' => 'web',
+              ],
+              [
+                'id' => 3,
+                'name' => 'Edit',
+                'guard_name' => 'web',
+              ],
+              [
+                'id' => 4,
+                'name' => 'Approver',
+                'guard_name' => 'web',
+              ],
+              [
+                'id' => 5,
+                'name' => 'launche-approver',
+                'guard_name' => 'web',
+              ],
+              [
+                'id' => 6,
+                'name' => 'launch-manager',
+                'guard_name' => 'web',
+              ]
+              );
 
               $this->command->info('Admin mirahy@vla.com.br user created, password adbvla123');
         }

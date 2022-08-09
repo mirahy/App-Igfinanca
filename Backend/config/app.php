@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'https://adbnfinanca.com/'),
+    'url' => env('APP_URL', 'https://igfinanca.test/'),
 
     /*
     |--------------------------------------------------------------------------

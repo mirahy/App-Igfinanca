@@ -1,0 +1,10 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^igfinanca.test/$ [NC,OR]
+RewriteCond %{REQUEST_URI} !public/
+RewriteRule (.*) /backend/public/$1 [L]
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^app.igfinanca.com$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^www.app.igfinanca.com$
+RewriteCond %{REQUEST_URI} !public/
+RewriteRule (.*) /appigfinanca/public/$1 [L]
